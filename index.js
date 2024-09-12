@@ -46,6 +46,10 @@ setInterval(updateDateTime, 1000);
 //Select a city and display its time zone
 function changeCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+    console.log(cityTimeZone);
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment.tz(cityTimeZone);
 
