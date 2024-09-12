@@ -71,3 +71,14 @@ h2 {
   letter-spacing: 1px;
   text-decoration: none;
 }
+
+.all-cities {
+  width: 16%;
+  display: block;
+  color: #49b618;
+  margin-top: 12px;
+  font-weight: bold;
+  margin: 10px auto;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
